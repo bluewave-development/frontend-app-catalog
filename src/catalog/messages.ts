@@ -23,8 +23,8 @@ const messages = defineMessages({
   },
   searchPlaceholder: {
     id: 'category.catalog.search-placeholder',
-    defaultMessage: 'Search for a course',
-    description: 'Search placeholder.',
+    defaultMessage: 'Search for a workshop',
+    description: '[BW Custom]Search placeholder.',
   },
   searchResults: {
     id: 'category.catalog.search-results',
@@ -38,8 +38,8 @@ const messages = defineMessages({
   },
   exploreCourses: {
     id: 'category.catalog.explore-courses',
-    defaultMessage: 'Explore courses',
-    description: 'Explore courses.',
+    defaultMessage: 'Explore workshops',
+    description: '[BW Custom]Explore courses.',
   },
   noResultsFound: {
     id: 'category.catalog.no-results-found',

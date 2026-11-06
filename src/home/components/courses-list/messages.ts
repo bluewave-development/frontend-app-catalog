@@ -18,8 +18,8 @@ const messages = defineMessages({
   },
   viewAllCoursesButton: {
     id: 'category.catalog.home-page.view-courses-button',
-    defaultMessage: 'View all courses',
-    description: 'Label for the button that redirect to courses page.',
+    defaultMessage: 'View all workshop',
+    description: '[BW Custom]Label for the button that redirect to courses page.',
   },
 });
 

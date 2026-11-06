@@ -13,8 +13,8 @@ const messages = defineMessages({
   },
   searchPlaceholder: {
     id: 'catalog.home-page.search-placeholder',
-    defaultMessage: 'Search for a course',
-    description: 'Placeholder text inside the course search input field.',
+    defaultMessage: 'Search for a workshop',
+    description: '[BW Custom]Placeholder text inside the course search input field.',
   },
   videoButton: {
     id: 'catalog.home-page.video-button',
