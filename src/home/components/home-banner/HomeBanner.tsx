@@ -9,6 +9,7 @@ import {
 import { ROUTES } from '@src/routes';
 import HomeOverlayHtmlSlot from '@src/plugin-slots/HomeOverlayHtmlSlot';
 import { HomePromoVideoButtonSlot, HomePromoVideoModalSlot } from '@src/plugin-slots/HomePromoVideoSlots';
+import BwLanguageSelector from '@src/components/BwLanguageSelector';
 
 import messages from './messages';
 
@@ -33,23 +34,27 @@ const HomeBanner = () => {
   );
 
   return (
-    <section
-      className="home-banner d-flex justify-content-center align-items-center position-relative overflow-hidden"
-      data-testid="home-banner"
-    >
-      <div className="animation-wrapper d-flex justify-content-center align-items-center flex-column p-4 my-5">
-        <HomeOverlayHtmlSlot />
-        <HomePromoVideoButtonSlot onClick={open} />
-        <Container size="sm">
-          {searchField}
-        </Container>
-      </div>
-      <HomePromoVideoModalSlot
-        isOpen={isOpen}
-        close={close}
-        videoId={getConfig().HOMEPAGE_PROMO_VIDEO_YOUTUBE_ID || ''}
-      />
-    </section>
+    <>
+      <section
+        className="home-banner d-flex justify-content-center align-items-center position-relative overflow-hidden"
+        data-testid="home-banner"
+      >
+        <div className="animation-wrapper d-flex justify-content-center align-items-center flex-column p-4 my-5">
+          <HomeOverlayHtmlSlot />
+          <HomePromoVideoButtonSlot onClick={open} />
+          <Container size="sm">
+            {searchField}
+          </Container>
+        </div>
+        <HomePromoVideoModalSlot
+          isOpen={isOpen}
+          close={close}
+          videoId={getConfig().HOMEPAGE_PROMO_VIDEO_YOUTUBE_ID || ''}
+        />
+      </section>
+      {/* === [BW Custom] Botón Selector de Idioma Blue Wave debajo del HomeBanner === */}
+      <BwLanguageSelector />
+    </>
   );
 };
 
