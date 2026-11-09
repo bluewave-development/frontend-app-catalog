@@ -15,6 +15,8 @@ export const EnrollmentButton = ({
 
   return (
     <StatefulButton
+      id="enrollNowBtn"
+      disabled
       variant={Object.entries(singlePaidMode).length > 0 ? 'outline-primary' : 'primary'}
       onClick={ecommerceCheckout ? onEcommerceCheckout : onEnroll}
       state={isEnrollmentPending ? 'pending' : 'default'}
