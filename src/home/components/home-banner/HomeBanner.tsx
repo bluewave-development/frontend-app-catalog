@@ -25,6 +25,7 @@ const HomeBanner = () => {
     <Form.Group className="mt-4.5">
       <SearchField
         placeholder={intl.formatMessage(messages.searchPlaceholder)}
+        buttonText={intl.formatMessage(messages.searchButton)}
         value={searchValue}
         submitButtonLocation="external"
         onChange={(value: string) => setSearchValue(value)}

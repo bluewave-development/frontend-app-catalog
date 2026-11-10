@@ -19,6 +19,12 @@ const messages = defineMessages({
     description:
       "[BW Custom]Placeholder text inside the course search input field.",
   },
+  searchButton: {
+    id: "catalog.home-page.search-button",
+    defaultMessage: "Search",
+    description:
+      "[BW Custom]Text displayed on the search submit button.",
+  },
   videoButton: {
     id: "catalog.home-page.video-button",
     defaultMessage: "View promo video",
