@@ -9,7 +9,7 @@ const messages = defineMessages({
   },
   subtitle: {
     id: "catalog.home-page.subtitle",
-    defaultMessage: "",
+    defaultMessage: "Workshop platform",
     description:
       "[BW Custom]Secondary text displayed below the main heading on the home page.",
   },
@@ -22,8 +22,7 @@ const messages = defineMessages({
   searchButton: {
     id: "catalog.home-page.search-button",
     defaultMessage: "Search",
-    description:
-      "[BW Custom]Text displayed on the search submit button.",
+    description: "[BW Custom]Text displayed on the search submit button.",
   },
   videoButton: {
     id: "catalog.home-page.video-button",
